@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Gideon+Roman:regular);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Arial Narrow Bold", sans-serif;
+  color: #3e2600;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: bisque;
+  background-image: url(https://andreyzhigalov.github.io/roman-numeral-converter/img/background.webp);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: 70vh;
+  background-color: bisque;
+  border-radius: 10px;
+  -webkit-box-shadow: black 0 0 20px;
+          box-shadow: black 0 0 20px;
+}
+.container .header {
+  font-size: 5vh;
+  text-align: center;
+  font-weight: 600;
+}
+.container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .input-container p {
+  font-size: 2.5vh;
+  text-align: center;
+  font-weight: 400;
+}
+.container .input-container .input-container__input {
+  width: 80%;
+  height: 9vh;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 6vh;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 20px;
+  border: #3e2600 3px solid;
+  color: #3e2600;
+  outline: none;
+}
+.container .output {
+  height: 10vh;
+  text-align: center;
+  font-size: 4.5vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 920px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .container {
+    width: 90vw;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .input-container .input-container__input {
+    width: 95%;
+    height: 12vh;
+    font-size: 4vh;
+  }
+}
