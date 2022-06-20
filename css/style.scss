@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #3e2600;
 }
 html {
@@ -51,7 +51,7 @@ body {
         .input-container__input {
             width: 80%;
             height: 9vh;
-            font-family: 'Arial Narrow Bold', sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 6vh;
             text-align: center;
             font-weight: 600;
@@ -62,11 +62,12 @@ body {
         }
     }
     .output {
-        height: 10vh;
+        height: 40%;
+        width: 85%;
         text-align: center;
-        font-size: 4.5vh;
-        text-align: center;
+        font-size: 7vh;
         font-weight: 600;
+        word-break: break-word;
     }
 }
 
@@ -90,6 +91,8 @@ body {
                 font-size: 4vh;
             }
         }
-        
+        .output {
+            font-size: 6vh;
+        }
     }
 }

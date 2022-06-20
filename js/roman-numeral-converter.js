@@ -22,14 +22,17 @@ class ArabicToRomanConverter {
         70000:"L\u0305X\u0305X\u0305",80000:"L\u0305X\u0305X\u0305X\u0305",90000:"X\u0305C\u0305",100000:"C\u0305",
         200000:"C\u0305C\u0305",300000:"C\u0305C\u0305C\u0305",400000:"C\u0305D\u0305",500000:"D\u0305",
         600000:"D\u0305C\u0305",700000:"D\u0305C\u0305C\u0305",800000:"D\u0305C\u0305C\u0305C\u0305",900000:"C\u0305M\u0305",
-        1000000:"M\u0305",2000000:"M\u0305M\u0305",3000000:"M\u0305M\u0305M\u0305",
-        4000000:"I\u0305\u0305V\u0305\u0305",5000000:"V\u0305\u0305",6000000:"V\u0305\u0305I\u0305\u0305",
-        7000000:"V\u0305\u0305I\u0305\u0305I\u0305\u0305",8000000:"V\u0305\u0305I\u0305\u0305I\u0305\u0305I\u0305\u0305",
-        9000000:"I\u0305\u0305X\u0305\u0305",10000000:"X\u0305\u0305",};
+        1000000:"M\u0305",2000000:"M\u0305M\u0305",3000000:"M\u0305M\u0305M\u0305",4000000:"I\u033FV\u033F",5000000:"V\u033F",
+        6000000:"V\u033FI\u033F",7000000:"V\u033FI\u033FI\u033F",8000000:"V\u033FI\u033FI\u033FI\u033F",9000000:"I\u033FX\u033F",
+        10000000:"X\u033F",20000000:"X\u033FX\u033F",30000000:"X\u033FX\u033FX\u033F",40000000:"X\u033FL\u033F",50000000:"L\u033F",
+        60000000:"L\u033FX\u033F",70000000:"L\u033FX\u033FX\u033F",80000000:"L\u033FX\u033FX\u033FX\u033F",90000000:"X\u033FC\u033F",
+        100000000:"C\u033F",200000000:"C\u033FC\u033F",300000000:"C\u033FC\u033FC\u033F",400000000:"C\u033FD\u033F",500000000:"D\u033F",
+        600000000:"D\u033FC\u033F",700000000:"D\u033FC\u033FC\u033F",800000000:"D\u033FC\u033FC\u033FC\u033F",900000000:"C\u033F",
+        1000000000:"M\u033F",2000000000:"M\u033FM\u033F",3000000000:"M\u033FM\u033FM\u033F",4000000000:"M\u033FM\u033FM\u033FM\u033F",};
 
         /* THE CONVERTER*/ 
         this.convertToRoman = (input) => {
-            if(input.target.value <= 10000000) {
+            if(input.target.value <= 4999999999) {
                 let arabicNumber = input.target.value.split("");
                 let romanNumberOutput = "";
                 for (arabicNumber; arabicNumber.length>0; arabicNumber = arabicNumber.splice(1, arabicNumber.length)){
@@ -41,16 +44,11 @@ class ArabicToRomanConverter {
             } else {
                 this.outputNumber.innerText = "Неподходящее значение"
             }
-            
-            /* OUTPUT FONT SIZE CHANGER*/ 
-            this.outputNumber.innerText.length > 18 ? 
-            this.outputNumber.style.fontSize = "4vh": 
-            this.outputNumber.innerText.length > 15 ? 
-            this.outputNumber.style.fontSize = "5vh": 
-            this.outputNumber.style.fontSize = "7vh";
         }
         this.start = () => {
             this.inputNumber.addEventListener("input", this.convertToRoman)
         }
     }
 }
+
+
