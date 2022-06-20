@@ -53,4 +53,4 @@ class ArabicToRomanConverter {
             this.inputNumber.addEventListener("input", this.convertToRoman)
         }
     }
-}3432234
+}
