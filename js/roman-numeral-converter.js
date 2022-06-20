@@ -31,13 +31,13 @@ class ArabicToRomanConverter {
         this.convertToRoman = (input) => {
             if(input.target.value <= 10000000) {
                 let arabicNumber = input.target.value.split("");
-                let romanNomberOutput = "";
+                let romanNumberOutput = "";
                 for (arabicNumber; arabicNumber.length>0; arabicNumber = arabicNumber.splice(1, arabicNumber.length)){
                     if(this.roman[arabicNumber[0]+"0".repeat(arabicNumber.length-1)] != undefined) {
-                        romanNomberOutput += this.roman[arabicNumber[0]+"0".repeat(arabicNumber.length-1)]
+                        romanNumberOutput += this.roman[arabicNumber[0]+"0".repeat(arabicNumber.length-1)]
                     }
                 }
-                this.outputNumber.innerText = romanNomberOutput
+                this.outputNumber.innerText = romanNumberOutput
             } else {
                 this.outputNumber.innerText = "Неподходящее значение"
             }
@@ -53,4 +53,4 @@ class ArabicToRomanConverter {
             this.inputNumber.addEventListener("input", this.convertToRoman)
         }
     }
-}3432234
+}

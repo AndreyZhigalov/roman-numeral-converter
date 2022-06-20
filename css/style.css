@@ -94,7 +94,7 @@ body {
 .container .output {
   height: 10vh;
   text-align: center;
-  font-size: 4.5vh;
+  font-size: 100%;
   text-align: center;
   font-weight: 600;
 }
