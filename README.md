@@ -1,9 +1,6 @@
-# ARABIC TO ROMAN NUMERALS CONVERTER
+# КОНВЕРТЕР С АРАБСКИХ ЦИФР НА РИМСКИЕ
 
-## Benifits
-✅ Converts up to 10 MILLION!<br>
-✅ Simple to connect and to use<br>
-✅ It takes account of line over the numerals over than 3999, and double line of over 3999999<br>
-✅ Native JavaScript<br>
-
-I will increase it to 4 billion soon.<br>
+## Особенности
+✅ Конвертирует до 4 миллиардов! \
+✅ Нативный JS \
+✅ Учитывает одиночные и двойные подчёркивания для цифр от 4к \
